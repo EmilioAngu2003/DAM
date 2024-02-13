@@ -1,0 +1,93 @@
+1. Sumar dos números y mostrar el resultado en una activity separada.
+
+2. Calcular total de venta y mostrar IVA:
+Este es el segundo ejercicio con Android. Vamos a hacer una app que pida:
+ Cantidad de productos
+ Precio de cada producto
+Y calcule el valor sin IVA, el IVA y el valor con IVA. El IVA es un impuesto del 16 %. Los resultados se
+verán en otra pantalla.
+
+3. Tercer ejercicio con Android. En este vamos a ver cómo pedir el nombre de un usuario y su edad, para
+que al presionar un botón se abra otra actividad y le muestre:
+
+1. Si es menor de edad: una imagen de un juguete (con un mensaje de que todavía no está preparado)
+
+2. Si es mayor de edad: una imagen de un auto
+
+4. Crear una aplicación con Kotlin en la que se muestre un botón que diga «Púlsame». También se
+
+crearán un elemento EditText y un TextView.
+– El EditText tendrá un «hint» (placeholder) que diga «Texto de muestra 1» y el TextView tendrá un
+texto que diga: «Texto de muestra 2».
+– Al pulsar el botón, los textos del EditText y del TextView se sustituirán por «Has pulsado el botón».
+5. Calcular el cambio de moneda en dólares y euros al ingresar cierta cantidad en euros.
+
+6. Tradiciones Lambayecanas” es una empresa dedicada a ofrecer banquetes; sus tarifas son las siguientes:
+el costo de platillo por persona es de 30.00 euros, pero si el número de personas es mayor a 200 pero
+menor o igual a 300, el costo es de 25.00 euros. Para más de 300 personas el costo por platillo es de 10.00
+euros. El gerente de la empresa requiere implementar una app que ayude a determinar el presupuesto que
+se debe presentar a los clientes que deseen realizar un evento.
+
+7. (RadioButton, RadioGroup, CheckBox, ImageView)
+Una empresa aseguradora ha establecido el costo de una póliza de seguros para automóviles, la misma
+que se obtiene de la siguiente forma:
+
+Costo
+Total =
+
+Cargo por
+valor +
+
+Cargo por
+modelo +
+
+Cargo por la
+edad del
+propietario
++
+Cargo por
+accidentes
+previos
+Implemente una app que lea el nombre, la edad del propietario, el valor del automóvil, el modelo y el
+número de accidentes que ha tenido; y finalmente muestre el costo de dicha póliza. Utilice los siguientes
+datos para determinar los cargos:
+Cargo por valor= 3.5% del valor del automóvil
+
+El cargo por accidentes previos es
+de $17 por los primeros tres
+accidentes y $21 por cada
+accidente extra.
+Cargo por modelo
+Modelo % del valor del auto
+A 1.1 %
+B 1.2 %
+
+C 1.5 %
+
+Nota: La compañía no asegura automóviles a personas con edad fuera de estos
+rangos.
+Cargo por edad
+Edad Cargo
+>=18 y <24 años $ 360
+>=24 y <53 años $ 240
+>=53 a más años $ 430
+
+8. Implementar una app que calcule el pago de los cursos en los que desea matricularse un estudiante.
+El costo es de acuerdo al turno y a los cursos.
+Curso
+Turno
+
+PHP Java Android
+Mañana S/. 255.00 S/. 330.00 S/. 545.00
+Tarde S/. 260.00 S/. 340.00 S/. 575.00
+Noche S/. 275.00 S/. 365.00 S/. 620.00
+
+9. Realizar un programa que genere un número aleatorio entre 1 y 50, pedir
+que el operador lo adivine, informar si ganó o si el número es mayor o menor
+al ingresado. Cuando el operador lo adivine incrementar en uno el puntaje de
+juego. Cada vez que se ingrese a la aplicación mostrar el puntaje actual, es
+decir recordar el puntaje en un archivo de preferencias.
+
+10.Realizar un programa que contenga dos Activity. En el primero que solicite el ingreso de una clave
+(control Password) Si ingresa la clave "abc123" activar el segundo Activity mostrando en un TextView un
+mensaje de bienvenida (mostrar en Toast si se ingresa la clave incorrecta en el primer Activity)
