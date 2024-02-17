@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pedidos [
+    <!ELEMENT pedidos (pedido*)>
+    <!ELEMENT pedido ((empresa|persona), producto+, fecha, factura?)>
+
+    <!ELEMENT empresa (#PCDATA)>
+    <!ATTLIST empresa 
+        cif ID #REQUIRED
+    >
+
+    <!ELEMENT persona (#PCDATA)>
+    <!ATTLIST persona 
+        nif ID #REQUIRED
+    >
+
+    <!ELEMENT producto (#PCDATA)>
+    <!ATTLIST producto 
+        id ID #REQUIRED
+    >
+
+    <!ELEMENT fecha (#PCDATA)>
+
+    <!ELEMENT factura (emisor, total, fecha)>
+    <!ATTLIST factura 
+        numfactura ID #REQUIRED
+        cliente IDREF #REQUIRED
+        productos IDREFS #REQUIRED
+    >
+
+    <!ELEMENT emisor (#PCDATA)>
+    <!ENTITY MiEmpresa SYSTEM "entgenextana.txt">
+
+    <!ELEMENT total (#PCDATA)>
+]>
+
+<pedidos>
+    <pedido>
+        <empresa cif="E12345">
+            Contenido de empresa
+        </empresa>
+        <producto id="P1">Producto 1</producto>
+        <producto id="P2">Producto 2</producto>
+        <fecha>2023-11-11</fecha>
+        <factura numfactura="F1" cliente="E12345" productos="P1 P2">
+            <emisor>&MiEmpresa;</emisor>
+            <total>100.00</total>
+            <fecha>2023-11-12</fecha>
+        </factura>
+    </pedido>
+    <!-- Otros pedidos aquí -->
+</pedidos>

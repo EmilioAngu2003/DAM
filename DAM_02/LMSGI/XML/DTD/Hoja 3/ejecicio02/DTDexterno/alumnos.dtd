@@ -1,0 +1,7 @@
+<!ELEMENT alumnos (alumno*)>
+<!ELEMENT alumno (nombre, apellidos, domicilio, telefono+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT domicilio (#PCDATA)>
+<!ELEMENT telefono EMPTY>
+<!ATTLIST telefono numero CDATA #REQUIRED>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido>
+    <cliente>Maria</cliente>
+    <articulo>mesa</articulo>
+    <fecha dd="11" mm="07" aa="2014"/>
+    <cantidad>5</cantidad>
+    <importe moneda="euros">931.57</importe>
+</pedido>

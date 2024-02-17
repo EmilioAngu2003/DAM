@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Formularios</title>
+</head>
+<body>
+
+    <form>
+    <pre>
+    <fieldset>
+        <legend>Formulario 1</legend>
+
+        <input id="nombre" type="text" name="nombre" placeholder="Nombre">
+
+        <input id="apellidos" type="text" name="apellidos" placeholder="Apellidos">
+
+        <input id="direccion" type="text" name="direccion" placeholder="Dirección">
+        
+        <input id="localidad" type="text" name="localidad" placeholder="Localidad">
+        
+        <input id="provincia" type="text" name="provincia" placeholder="Provincia">
+        
+        <input id="codigo_postal" type="text" name="codigo_postal" placeholder="Código Postal">
+        
+        <input id="telefono" type="text" name="telefono" placeholder="Teléfono">
+        
+        Sexo
+        <input type="radio" name="sexo" value="hombre">Hombre <input type="radio" name="sexo" value="mujer">Mujer
+        
+        Estado Civil
+        <select id="estado_civil">
+
+            <option value="soltero" selected>Soltero/a</option>
+            <option value="Casado">Casado/a</option>
+            <option value="Divorciado">Divorciado/a</option>
+            <option value="Viudo">Viudo/a</option>
+
+        </select>
+
+        <input type="submit" value="Aceptar"> <input type="reset" value="Vaciar Formulario">
+
+    </fieldset>
+    </pre>
+    </form>
+
+    <form>
+    <pre>
+    <fieldset>
+        <legend>Formulario 2</legend>
+
+        Forma de Pago
+        <input type="radio" name="forma_de_pago" value="cheque">Cheque
+        <input type="radio" name="forma_de_pago" value="giro_postal">Giro Postal <input id="numero" type="text" name="numero" placeholder="Numero">
+        <input type="radio" name="forma_de_pago" value="contra_rembolos">Contra Rembolso
+        <input type="radio" name="forma_de_pago" value="tarjeta">Tarjeta de Crédito <select id="tarjeta">
+
+            <option value="visa">Visa</option>
+            <option value="america_express">American Express</option>
+            <option value="4b">4b</option>
+            <option value="servired">Servired</option>
+            <option value="red_6000">red 6000</option>
+
+        </select>
+
+        <input type="submit" value="Aceptar">
+    
+    </fieldset>
+    </pre>
+    </form>
+    
+    <form>
+    <pre>
+    <fieldset>
+            <legend>Formulario 3</legend>
+    
+            Datos Personales
+            <input type="checkbox" name="si" value="si">SI <input type="checkbox" name="no" value="no">NO
+            <input type="checkbox" name="si" value="si">SI <input type="checkbox" name="no" value="no">NO
+            <input type="checkbox" name="si" value="si">SI <input type="checkbox" name="no" value="no">NO
+            <input type="checkbox" name="si" value="si">SI <input type="checkbox" name="no" value="no">NO
+
+            <input type="submit" value="Aceptar">
+
+    </fieldset>
+    </pre>
+    </form>
+
+    <form>
+        <pre>
+        <fieldset>
+            <legend>Formulario 4</legend>
+    
+            <input id="nombre" type="text" name="nombre" placeholder="Nombre">
+    
+            <input id="apellidos" type="text" name="apellidos" placeholder="Apellidos">
+    
+            <input id="dni" type="text" name="dni" placeholder="DNI">
+
+            <input id="fecha_nacimiento" type="date" name="fecha_nacimiento">
+    
+            <input id="nacido_en" type="text" name="nacido_en" placeholder="Nacido En">
+            
+            <input id="provincia" type="text" name="provincia" placeholder="Provincia">
+    
+            <input id="localidad" type="text" name="localidad" placeholder="Localidad">
+            
+            <select id="domicilio_en">
+
+                <option value="calle">Calle</option>
+                <option value="avenida">Avenida</option>
+                <option value="plaza">Plaza</option>
+                <option value="otro">Otro</option>
+    
+            </select> <input id="domicilio" type="text" name="domicilio" placeholder="Domicilio"> 
+            
+            <input id="numero" type="text" name="numero" placeholder="Numero"> <input id="piso" type="text" name="piso" placeholder="Piso"> <input id="letra" type="text" name="letra" placeholder="Letra">
+    
+            <input id="telefono" type="text" name="telefono" placeholder="Teléfono">
+
+            <input type="submit" value="Aceptar">
+
+            <pre>
+            <fieldset>
+                <legend>Requisitos de Acceso</legend>
+                <input type="radio" name="forma_de_acceso" value="prueba">Mediante Prueba
+                <input type="radio" name="forma_de_acceso" value="directo">Directo
+                    <input type="radio" name="acceso_directo" value="bachillerato_logse">Bachillerato LOGSE: <input id="modalidad" type="text" name="modalidad" placeholder="Modalidad">
+                    <input type="radio" name="acceso_directo" value="bachillerato_experimental">Bachillerato Experimental
+                    <input type="radio" name="acceso_directo" value="COU">COU: <input id="opcion" type="text" name="opcion" placeholder="Opción">
+                    <input type="radio" name="acceso_directo" value="FP2">FP2 
+                    <input type="radio" name="acceso_directo" value="otros">Otros: <input id="especifique" type="text" name="especifique" placeholder="Especifique">
+                <input type="submit" value="Aceptar">
+            </fieldset>
+            </pre>
+
+            <pre>
+            <fieldset>
+                <legend>Solicitud</legend>
+                El/la que suscribe desea ser admitido en este centro para cursar el ciclo formativo de grado superior: 
+                
+                <select id="ciclo_formativo">
+
+                    <option value="">Ciclo Formativo</option>
+                    <option value="dam">DAM</option>
+                    <option value="daw">DAW</option>
+                    <option value="asir">ASIR</option>
+        
+                </select>
+
+                En caso de no ser admitido/a, solicita la admisión por orden de preferencia en los siguientes:
+
+                <table align="center">
+
+                    <thead>
+                        <th>Ciclos Formativos</th>
+                        <th>Centros</th>
+                        <th>Localidad</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <input id="ciclo_formativo_1" type="text" name="ciclo_formativo_1"> </td>
+                            <td> <input id="centro_1" type="text" name="centro_1"> </td>
+                            <td> <input id="localidad_1" type="text" name="localidad_1"> </td>
+                        </tr>
+                        <tr>
+                            <td> <input id="ciclo_formativo_2" type="text" name="ciclo_formativo_2"> </td>
+                            <td> <input id="centro_2" type="text" name="centro_2"> </td>
+                            <td> <input id="localidad_2" type="text" name="localidad_2"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+                Modalidad de Horario Especial<input type="checkbox" name="horario_especial" value="horario_especial">
+            
+                <input type="submit" value="Aceptar">
+            </fieldset>
+            </pre>
+
+            <pre>
+            <fieldset>
+                <legend>Documentación Presentada</legend>
+                <input type="checkbox" name="fotocopia_dni" value="fotocopia_dni">Fotocopia DNI <input type="checkbox" name="certificado_academico" value="certificado_academico">Certificado Académico
+                <input type="checkbox" name="otros_documentos" value="otros_documentos">Otros documentos <input id="especifique_documento" type="text" name="especifique_documento" placeholder="Especifique">
+                <input type="submit" value="Aceptar">
+            </fieldset>
+            </pre>
+        </fieldset>
+        </pre>
+        </form>
+</body>
+</html>

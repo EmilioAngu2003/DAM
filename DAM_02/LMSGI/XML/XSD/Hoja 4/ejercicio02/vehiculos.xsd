@@ -1,0 +1,43 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="vehiculos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="vehiculo" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="vehiculo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="modelo" type="xs:string"/>
+                <xs:element name="fabricacion" type="elemento-fabricacion"/>
+                <xs:element name="versiones" type="elemento-versiones"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="elemento-fabricacion">
+        <xs:sequence>
+            <xs:element name="inicio" type="elemento-fecha"/>
+            <xs:element name="fin" type="elemento-fecha"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="elemento-fecha">
+        <xs:sequence>
+            <xs:element name="dia" type="xs:string"/>
+            <xs:element name="mes" type="xs:string"/>
+            <xs:element name="anyo" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="elemento-versiones">
+        <xs:sequence>
+            <xs:element name="version" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

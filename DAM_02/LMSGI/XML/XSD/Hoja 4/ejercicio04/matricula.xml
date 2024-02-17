@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matricula xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="matricula.xsd">
+    <personal>
+        <dni>12345678A</dni>
+        <nombre>Miguel de la Quadra Salcedo</nombre>
+        <titulacion>Ingeniero agrónomo</titulacion>
+        <curso_academico>1950/1955</curso_academico>
+        <domicilios>
+            <domicilio tipo="familiar">
+                <nombre>C/ Amazonas nº1</nombre>
+            </domicilio>
+            <domicilio tipo="habitual">
+                <nombre>C/ Ruta Quetzal nº2</nombre>
+            </domicilio>
+        </domicilios>
+    </personal>
+    <pago>
+        <tipo_matricula>Matrícula ExtraOrdinaria</tipo_matricula>
+    </pago>
+</matricula>

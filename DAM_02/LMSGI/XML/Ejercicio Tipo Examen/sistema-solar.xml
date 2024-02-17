@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sistemaSolar [
+    <!ELEMENT sistemaSolar (planeta|asteroide)*>
+    
+    <!ELEMENT asteroide EMPTY>
+    <!ATTLIST asteroide diametro CDATA #REQUIRED >
+    
+    <!ELEMENT planeta (satelite*, contiente*, mar*)>
+    <!ATTLIST planeta nombre CDATA #REQUIRED >
+    
+    <!ELEMENT satelite EMPTY>
+    <!ATTLIST satelite precedente CDATA #IMPLIED >
+    
+    <!ELEMENT continente EMPTY>
+    <!ATTLIST continente nombre CDATA #REQUIRED >
+
+    <!ELEMENT mar EMPTY>
+    <!ATTLIST mar nombre CDATA #REQUIRED >    
+]>
+
+<sistemaSolar>
+    
+    <asteroide diametro="500m" />
+
+    <planeta nombre="Venus"></planeta>
+
+    <planeta nombre="Tierra">
+        <satelite /> <!-- Primer satelite de Tierra -->
+        <continente nombre="America" />
+        <continente nombre="Europa" />
+        <mar nombre="Atlantico" />
+        <mar nombre="Pacifico" />
+    </planeta>
+
+    <planeta nombre="Marte">
+        <satelite /> <!-- Primer satelite de Marte -->
+        <satelite precedente="1" />
+        <satelite precedente="2" />
+    </planeta>
+
+</sistemaSolar>

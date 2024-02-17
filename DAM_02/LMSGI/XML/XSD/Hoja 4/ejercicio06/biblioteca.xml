@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="hoja.css"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="biblioteca.xsd">
+    <libro area="ciencias">
+        <codigolibro>12345</codigolibro>
+        <titulo>El mundo de los anfibios</titulo>
+        <editorial>Rama</editorial>
+        <edicion>1</edicion>
+        <ISBN>234567CD</ISBN>
+        <numeropaginas>300</numeropaginas>
+        <autor>Antonio Del Río</autor>
+    </libro>
+    <libro area="literatura">
+        <codigolibro>12346</codigolibro>
+        <titulo>El Quijote</titulo>
+        <editorial>Mc Graw Hill</editorial>
+        <edicion>4</edicion>
+        <ISBN>123123AB</ISBN>
+        <numeropaginas>3000</numeropaginas>
+        <autor>Cervantes</autor>
+    </libro>
+    <libro area="literatura">
+        <codigolibro>12346</codigolibro>
+        <titulo>El Quijote</titulo>
+        <editorial>Mc Graw Hill</editorial>
+        <edicion>4</edicion>
+        <ISBN>123123AB</ISBN>
+        <numeropaginas>3000</numeropaginas>
+        <autor>Cervantes</autor>
+    </libro>
+    <libro area="literatura">
+        <codigolibro>12346</codigolibro>
+        <titulo>El Quijote</titulo>
+        <editorial>Mc Graw Hill</editorial>
+        <edicion>4</edicion>
+        <ISBN>123123AB</ISBN>
+        <numeropaginas>3000</numeropaginas>
+        <autor>Cervantes</autor>
+    </libro>
+    <libro area="literatura">
+        <codigolibro>12346</codigolibro>
+        <titulo>El Quijote</titulo>
+        <editorial>Mc Graw Hill</editorial>
+        <edicion>4</edicion>
+        <ISBN>123123AB</ISBN>
+        <numeropaginas>3000</numeropaginas>
+        <autor>Cervantes</autor>
+    </libro>
+    <libro area="literatura">
+        <codigolibro>12346</codigolibro>
+        <titulo>El Quijote</titulo>
+        <editorial>Mc Graw Hill</editorial>
+        <edicion>4</edicion>
+        <ISBN>123123AB</ISBN>
+        <numeropaginas>3000</numeropaginas>
+        <autor>Cervantes</autor>
+    </libro>
+    <libro area="literatura">
+        <codigolibro>12346</codigolibro>
+        <titulo>El Quijote</titulo>
+        <editorial>Mc Graw Hill</editorial>
+        <edicion>4</edicion>
+        <ISBN>123123AB</ISBN>
+        <numeropaginas>3000</numeropaginas>
+        <autor>Cervantes</autor>
+    </libro>
+    <libro area="literatura">
+        <codigolibro>12346</codigolibro>
+        <titulo>El Quijote</titulo>
+        <editorial>Mc Graw Hill</editorial>
+        <edicion>4</edicion>
+        <ISBN>123123AB</ISBN>
+        <numeropaginas>3000</numeropaginas>
+        <autor>Cervantes</autor>
+    </libro>
+    <libro area="literatura">
+        <codigolibro>12346</codigolibro>
+        <titulo>El Quijote</titulo>
+        <editorial>Mc Graw Hill</editorial>
+        <edicion>4</edicion>
+        <ISBN>123123AB</ISBN>
+        <numeropaginas>3000</numeropaginas>
+        <autor>Cervantes</autor>
+    </libro>
+    <libro area="literatura">
+        <codigolibro>12346</codigolibro>
+        <titulo>El Quijote</titulo>
+        <editorial>Mc Graw Hill</editorial>
+        <edicion>4</edicion>
+        <ISBN>123123AB</ISBN>
+        <numeropaginas>3000</numeropaginas>
+        <autor>Cervantes</autor>
+    </libro>
+</biblioteca>

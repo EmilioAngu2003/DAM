@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumnos [
+    <!ELEMENT alumnos (alumno*)>
+    <!ELEMENT alumno (nombre, apellidos, domicilio, (provincia|pais), telefono+, aficion*, comentario?, notas, equipo?)>
+
+    <!ELEMENT nombre (#PCDATA)>
+
+    <!ELEMENT apellidos (#PCDATA)>
+
+    <!ELEMENT domicilio (#PCDATA)>
+
+    <!ELEMENT provincia (#PCDATA)>
+
+    <!ELEMENT pais (#PCDATA)>
+
+    <!ELEMENT telefono EMPTY>
+    <!ATTLIST telefono
+        numero CDATA #REQUIRED
+    >
+
+    <!ELEMENT aficion (#PCDATA)>
+
+    <!ELEMENT comentario ANY>
+    
+    <!ELEMENT notas (#PCDATA|evaluacion|calificacion)*>
+    
+    <!ELEMENT evaluacion (#PCDATA)>
+    
+    <!ELEMENT calificacion (#PCDATA)>
+
+    <!ELEMENT equipo (#PCDATA)>
+]>
+
+<alumnos>
+    <alumno>
+        <nombre>Juan</nombre>
+        <apellidos>Pérez</apellidos>
+        <domicilio>Calle A, Ciudad</domicilio>
+        <provincia>Provincia A</provincia>
+        <telefono numero="123456789"/>
+        <telefono numero="987654321"/>
+        <aficion>Fútbol</aficion>
+        <comentario>Comentario sobre el alumno</comentario>
+        <notas>
+            <evaluacion>Examen1</evaluacion>
+            <calificacion>90</calificacion>
+            <evaluacion>Examen2</evaluacion>
+            <calificacion>85</calificacion>
+        </notas>
+        <equipo>Equipo de Fútbol</equipo>
+    </alumno>
+
+    <alumno>
+        <nombre>Maria</nombre>
+        <apellidos>Gómez</apellidos>
+        <domicilio>Calle B, Ciudad</domicilio>
+        <pais>País B</pais>
+        <telefono numero="111222333"/>
+        <notas>
+            <evaluacion>Examen1</evaluacion>
+            <calificacion>95</calificacion>
+        </notas>
+    </alumno>
+</alumnos>

@@ -1,0 +1,5 @@
+<!ELEMENT producto (descrip, pvp)>
+<!ATTLIST producto
+    id ID #REQUIRED>
+<!ELEMENT descrip (#PCDATA)>
+<!ELEMENT pvp (#PCDATA)>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pedidos SYSTEM "pedidos.dtd">
+<pedidos>
+    <pedido>
+        <empresa cif="E12345">
+            Contenido de empresa
+        </empresa>
+        <producto id="a">Producto 1</producto>
+        <producto id="b">Producto 2</producto>
+        <fecha>2023-11-11</fecha>
+        <factura numfactura="F1" cliente="E12345" productos="a b">
+            <emisor>Nombre del Emisor</emisor>
+            <total>100.00</total>
+            <fecha>2023-11-12</fecha>
+        </factura>
+    </pedido>
+    <!-- Otros pedidos aquí -->
+</pedidos>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumnos [
+    <!ELEMENT alumnos (alumno*)>
+    <!ELEMENT alumno (nombre, apellidos, domicilio, (provincia|pais), estatura?, telefono+, aficion*, comentario?, notas, equipo?)>
+    <!ATTLIST alumno 
+        num_alumno ID               #REQUIRED
+        sexo       (hombre|muejr)   #IMPLIED
+        ayudante   IDREF           #IMPLIED
+    >
+
+    <!ELEMENT nombre (#PCDATA)>
+
+    <!ELEMENT apellidos (#PCDATA)>
+
+    <!ELEMENT domicilio (#PCDATA)>
+
+    <!ELEMENT provincia (#PCDATA)>
+
+    <!ELEMENT pais (#PCDATA)>
+
+    <!ELEMENT estatura EMPTY>
+    <!ATTLIST estatura
+        numero CDATA #REQUIRED
+        unidad CDATA "cm"
+    >
+
+    <!ELEMENT telefono EMPTY>
+    <!ATTLIST telefono
+        numero CDATA #REQUIRED
+        tipo (propio|padre|madre|tutor) "propio"
+    >
+
+    <!ELEMENT aficion (#PCDATA)>
+
+    <!ELEMENT comentario ANY>
+    
+    <!ELEMENT notas (#PCDATA|evaluacion|calificacion)*>
+    
+    <!ELEMENT evaluacion (#PCDATA)>
+    
+    <!ELEMENT calificacion (#PCDATA)>
+
+    <!ELEMENT equipo (#PCDATA)>
+]>
+
+<alumnos>
+    <alumno num_alumno="a" sexo="hombre">
+        <nombre>Juan</nombre>
+        <apellidos>Pérez</apellidos>
+        <domicilio>Calle A, Ciudad</domicilio>
+        <provincia>Provincia A</provincia>
+        <estatura numero="180"/>
+        <telefono numero="123456789" tipo="propio"/>
+        <telefono numero="987654321" tipo="padre"/>
+        <aficion>Fútbol</aficion>
+        <comentario>Comentario sobre el alumno</comentario>
+        <notas>
+            <evaluacion>Examen1</evaluacion>
+            <calificacion>90</calificacion>
+            <evaluacion>Examen2</evaluacion>
+            <calificacion>85</calificacion>
+        </notas>
+        <equipo>Equipo de Fútbol</equipo>
+    </alumno>
+
+    <alumno num_alumno="b" ayudante="a">
+        <nombre>Maria</nombre>
+        <apellidos>Gómez</apellidos>
+        <domicilio>Calle B, Ciudad</domicilio>
+        <pais>País B</pais>
+        <telefono numero="111222333" tipo="madre"/>
+        <notas>
+            <evaluacion>Examen1</evaluacion>
+            <calificacion>95</calificacion>
+        </notas>
+    </alumno>
+</alumnos>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehiculos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vehiculos.xsd">
+    <vehiculo>
+        <nombre>Audi </nombre>
+        <modelo>R8</modelo>
+        <fabricacion>
+            <inicio>
+                <dia>21</dia>
+                <mes>Julio</mes>
+                <anyo>2007</anyo>
+            </inicio>
+            <fin>
+                <dia>9</dia>
+                <mes>Agosto</mes>
+                <anyo>2010</anyo>
+            </fin>
+        </fabricacion>
+        <versiones>
+            <version>Coupé</version>
+            <version>GT</version>
+            <version>R8 V12 TDI Le Mans</version>
+            <version>Targa o Roadster</version>
+            <version>Spyder</version>
+        </versiones>
+    </vehiculo>
+</vehiculos>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE alumnos SYSTEM "alumnos.dtd">
+<alumnos>
+    <alumno>
+        <nombre>Juan</nombre>
+        <apellidos>Pérez</apellidos>
+        <domicilio>Calle A, Ciudad</domicilio>
+        <telefono numero="123456789"/>
+    </alumno>
+    <alumno>
+        <nombre>Maria</nombre>
+        <apellidos>Gómez</apellidos>
+        <domicilio>Calle B, Ciudad</domicilio>
+        <telefono numero="987654321"/>
+    </alumno>
+</alumnos>
