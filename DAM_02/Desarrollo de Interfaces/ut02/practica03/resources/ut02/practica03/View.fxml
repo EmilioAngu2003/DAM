@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="320.0" prefWidth="540.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="ut02.practica03.Controller">
+   <children>
+      <HBox alignment="CENTER" layoutX="7.0" layoutY="2.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="94.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <Label text="Nombre" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <Label text="País" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <Label text="Ciudad" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="105.0">
+                     <children>
+                        <Label text="Calle" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <Label text="Número" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <Label text="Año inauguración" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <Label text="Capacidad" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="BASELINE_CENTER" prefHeight="400.0" prefWidth="15.0" />
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="128.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <TextField fx:id="NombreTxt" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <TextField fx:id="PaisTxt" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <TextField fx:id="CiudadTxt" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <TextField fx:id="Calletxt" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <TextField fx:id="NumeroTxt" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <TextField fx:id="AnyoTxt" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <TextField fx:id="CapacidadTxt" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="BASELINE_CENTER" prefHeight="400.0" prefWidth="22.0" />
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="109.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <RadioButton fx:id="isPublico" mnemonicParsing="false" text="Público" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <Label text="Financiación" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <Label text="Trab. discapacitados" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="105.0">
+                     <children>
+                        <RadioButton fx:id="isPrivado" mnemonicParsing="false" text="Privado" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <Label text="Nº Socios" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#Guardar" text="Guardar" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="BASELINE_CENTER" prefHeight="400.0" prefWidth="15.0" />
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="128.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0" />
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <TextField fx:id="FinanciacionTxt" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <TextField fx:id="TrabDiscapacitadosTxt" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0" />
+                  <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <TextField fx:id="NumSociosTxt" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="247.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#Cancelar" text="Cancelar" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

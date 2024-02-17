@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="180.0" prefWidth="180.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ut02.practica02.Controller">
+   <children>
+      <TextField fx:id="TextField" layoutX="14.0" layoutY="28.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="20.0" />
+      <Slider fx:id="SliderNota" blockIncrement="1.0" layoutX="15.0" layoutY="63.0" max="6.0" onMouseDragged="#updateNota" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <ScrollBar fx:id="ScrollBarAlteracion" layoutX="15.0" layoutY="101.0" max="2.0" onScroll="#updateAlteracion" prefHeight="14.0" prefWidth="140.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <Spinner fx:id="SpinnerOctava" layoutX="17.0" layoutY="138.0" prefHeight="25.0" prefWidth="140.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+   </children>
+</AnchorPane>
