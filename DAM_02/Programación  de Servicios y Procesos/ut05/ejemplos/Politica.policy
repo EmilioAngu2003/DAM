@@ -1,0 +1,7 @@
+/* AUTOMATICALLY GENERATED ON Thu Feb 20 00:29:41 CET 2014*/
+/* DO NOT EDIT */
+
+grant codeBase "file:c:/" {
+  permission java.io.FilePermission "c:/ficheros/*", "write,read";
+};
+
