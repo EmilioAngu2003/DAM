@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pelicula>
+    <titulo>Spider-Man: No Way Home</titulo>
+    <fecha>2021-12-17</fecha>
+    <genero>Aventura</genero>
+    <sinopsis>Spider-Man: No Way Home sigue al héroe arácnido mientras lucha contra enemigos de otras dimensiones que amenazan con destruir su mundo.</sinopsis>
+    <reparto>
+        <actor>Tom Holland</actor>
+        <actor>Zendaya</actor>
+        <actor>Benedict Cumberbatch</actor>
+    </reparto>
+</pelicula>

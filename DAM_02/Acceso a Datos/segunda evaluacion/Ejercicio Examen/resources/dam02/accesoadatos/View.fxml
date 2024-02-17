@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dam02.accesoadatos.Controller">
+    <Button fx:id="btnAnyadir" layoutX="544.0" layoutY="44.0" mnemonicParsing="false" onAction="#anyadir" prefHeight="26.0" prefWidth="59.0" text="Añadir" />
+    <TableView fx:id="tableView" layoutX="17.0" layoutY="111.0" prefHeight="270.0" prefWidth="570.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+      <columns>
+          <TableColumn fx:id="columnId" maxWidth="60.0" minWidth="25.0" prefWidth="39.999997317790985" text="Id" />
+          <TableColumn fx:id="columnNombre" maxWidth="192.00004196166992" minWidth="100.0" prefWidth="180.79996871948242" text="Nombre" />
+          <TableColumn fx:id="columnDescripcion" maxWidth="171.99998474121094" minWidth="100.0" prefWidth="132.80003356933594" text="Descripcion" />
+          <TableColumn fx:id="columnDinero" maxWidth="148.800048828125" minWidth="60.800048828125" prefWidth="74.4000244140625" text="Dinero" />
+          <TableColumn fx:id="columnPuntos" maxWidth="119.199951171875" minWidth="51.20001220703125" prefWidth="59.20001220703125" text="Puntos" />
+          <TableColumn fx:id="columnNivel" maxWidth="128.800048828125" minWidth="30.0" prefWidth="55.199981689453125" text="Nivel" />
+          <TableColumn fx:id="columnEditar" minWidth="49.5999755859375" prefWidth="56.79998779296875" text="Editar" />
+         <TableColumn fx:id="columnEliminar" minWidth="55.0" prefWidth="68.800048828125" text="Eliminar" />
+      </columns>
+      <columnResizePolicy>
+         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+      </columnResizePolicy>
+    </TableView>
+   <Button fx:id="btnBuscar" layoutX="544.0" layoutY="77.0" mnemonicParsing="false" onAction="#buscar" prefHeight="26.0" prefWidth="59.0" text="Buscar" />
+   <TextField fx:id="fieldNombre" layoutX="185.0" layoutY="45.0" />
+   <Label layoutX="185.0" layoutY="20.0" text="Nombre" />
+   <Label layoutX="350.0" layoutY="20.0" text="Descripcion" />
+   <TextField fx:id="fieldDescripcion" layoutX="350.0" layoutY="45.0" />
+   <Label layoutX="24.0" layoutY="85.0" text="Dinero" />
+   <TextField fx:id="fieldDinero" layoutX="24.0" layoutY="110.0" prefHeight="26.0" prefWidth="150.0" />
+   <Label layoutX="185.0" layoutY="85.0" text="Puntos" />
+   <TextField fx:id="fieldPuntos" layoutX="185.0" layoutY="110.0" prefHeight="26.0" prefWidth="150.0" />
+   <Label layoutX="350.0" layoutY="85.0" text="Nivel" />
+   <TextField fx:id="fieldNivel" layoutX="350.0" layoutY="110.0" prefHeight="26.0" prefWidth="150.0" />
+   <TextField fx:id="fieldId" layoutX="24.0" layoutY="45.0" />
+   <Label layoutX="24.0" layoutY="20.0" text="Id" />
+   <Button fx:id="btnCancelar" disable="true" layoutX="611.0" layoutY="77.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+   <Button fx:id="btnGuardar" disable="true" layoutX="612.0" layoutY="45.0" mnemonicParsing="false" onAction="#guardar" text="Guardar" />
+</AnchorPane>

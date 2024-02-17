@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo>
+    <pelicula>
+        <titulo>Dune</titulo>
+        <fecha>2021-10-21</fecha>
+        <genero>Ciencia ficción</genero>
+        <sinopsis>Adaptación de la novela homónima de Frank Herbert.</sinopsis>
+        <reparto>
+            <actor>Timothée Chalamet</actor>
+            <actor>Oscar Isaac</actor>
+            <actor>Rebecca Ferguson</actor>
+        </reparto>
+    </pelicula>
+    <pelicula>
+        <titulo>No Time to Die</titulo>
+        <fecha>2021-09-30</fecha>
+        <genero>Acción</genero>
+        <sinopsis>Última película de James Bond con Daniel Craig.</sinopsis>
+        <reparto>
+            <actor>Daniel Craig</actor>
+            <actor>Rami Malek</actor>
+            <actor>Léa Seydoux</actor>
+        </reparto>
+    </pelicula>
+</catalogo>

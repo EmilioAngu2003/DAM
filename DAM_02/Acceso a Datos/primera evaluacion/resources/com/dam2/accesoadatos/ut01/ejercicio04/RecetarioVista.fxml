@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="348.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dam2.accesoadatos.ut01.ejercicio04.RecetarioControlador">
+   <Button layoutX="20.0" layoutY="205.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="30.0" text="+" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="205.0" />
+   <Label layoutX="23.0" layoutY="27.0" text="Nombre" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+   <Label layoutX="23.0" layoutY="57.0" text="Descripcion" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="60.0" />
+   <Label layoutX="21.0" layoutY="200.0" text="Ingredientes" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="175.0" />
+   <TextField fx:id="txtNombre" layoutX="91.0" layoutY="23.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="15.0" />
+   <TextArea fx:id="txtDescripcion" layoutX="91.0" layoutY="57.0" prefHeight="100.0" prefWidth="472.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="55.0" />
+   <ListView fx:id="listIngredientes" editable="true" layoutX="91.0" layoutY="200.0" prefHeight="151.0" prefWidth="472.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="170.0" />
+   <Button layoutX="57.0" layoutY="205.0" mnemonicParsing="false" onAction="#remove" prefHeight="25.0" prefWidth="30.0" text="-" AnchorPane.leftAnchor="57.0" AnchorPane.topAnchor="205.0" />
+   <Button layoutX="20.0" layoutY="307.0" mnemonicParsing="false" onAction="#export" prefHeight="25.0" prefWidth="66.0" text="Exportar" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="20.0" />
+</AnchorPane>

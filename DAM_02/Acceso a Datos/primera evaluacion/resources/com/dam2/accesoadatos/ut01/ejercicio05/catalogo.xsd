@@ -1,0 +1,14 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:p="http://www.ejemplo.com/peliculas">
+
+    <xs:import namespace="http://www.ejemplo.com/peliculas" schemaLocation="pelicula.xsd"/>
+
+    <xs:element name="catalogo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pelicula" type="p:peliculaType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
