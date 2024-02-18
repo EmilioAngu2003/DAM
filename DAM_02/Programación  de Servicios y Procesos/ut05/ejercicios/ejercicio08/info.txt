@@ -1,0 +1,7 @@
+Comandos para la creacion de ficheros:
+
+keytool -genkey -alias servidor -keyalg RSA -keystore server.keystore -storepass password -validity 365
+
+keytool -exportcert -alias servidor -file server.cer -keystore server.keystore -storepass password
+
+keytool -importcert -alias servidor -file server.cer -keystore client.truststore -storepass password -noprompt
